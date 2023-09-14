@@ -32,23 +32,25 @@ header, main {
 header {
     box-shadow: 0 4px 2px -2px grey;
     background-color: white;
+    margin-bottom: 1em;
 }
 
 header h1 {
     margin: 0;
-    font-size: 250%;
-    color: lightskyblue;
+    font-size: 260%;
+    color: rgb(145, 204, 229);
 }
 
 header h1 span:first-child {
     color: rgb(83, 149, 176);
 }
 
-header ul {
+header nav {
     list-style: none;
     display: flex;
-    padding: 0;
-    column-gap: 2em;
+    padding: 1em;
+    padding-left: 0;
+    gap: 2em;
 }
 
 header li {
@@ -58,4 +60,27 @@ header li {
 header li:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.tile-list {
+    padding: 0;
+    display: flex;
+}
+
+.tile-list li {
+    list-style: none;
+
+    margin: 1em;
+    background: white;
+    padding: 1em;
+    
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    
+    box-shadow: 1px 1px 1px grey;
+}
+
+.alle {
+    background-color: rgb(236, 236, 236);
 }
