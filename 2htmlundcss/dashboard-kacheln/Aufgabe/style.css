@@ -28,3 +28,34 @@ html {
 header, main {
     padding: 1rem;
 }
+
+header {
+    box-shadow: 0 4px 2px -2px grey;
+    background-color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 250%;
+    color: lightskyblue;
+}
+
+header h1 span:first-child {
+    color: rgb(83, 149, 176);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    column-gap: 2em;
+}
+
+header li {
+    color: crimson;
+}
+
+header li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
