@@ -13,41 +13,85 @@
     <header>
       <h1><span>Aufgabenliste</span> <span>Dashboard</span></h1>
       <nav>
-        <li>Liste</li>
-        <li>Aufgabe anlegen</li>
-        <li>Kategorien bearbeiten</li>
-        <li class="icon-logout">Logout</li>
+        <li><a href="#">Liste</a></li>
+        <li><a href="#">Aufgabe anlegen</a></li>
+        <li><a href="#">Kategorien bearbeiten</a></li>
+        <li class="icon-logout"><a href="#">Logout</a></li>
       </nav>
     </header>
 
     <!-- Hauptinhalt der Seite -->
     <main>
-      <div>
-        <h2>Alle Katgorien</h2>
-        <ul class="tile-list kategorie-alle">
-          <li class="alle">
-            <div>Alle</div>
-            <div class="icon-calendar"></div>
-            <div>11</div>
-          </li>
-
-          <li>
-            <div>Offen</div>
-            <div class="icon-doc"></div>
-            <div>4</div>
-          </li>
-
-          <li>
-            <div>In Bearbeitung</div>
-            <div class="icon-rocket"></div>
-            <div>3</div>
-          </li>
-        </ul>
-      </div>
-      <div>
+      <section id="category-all">
+        <h2>Alle Kategorien</h2>
+        <div class="tile-container">
+          <div class="tile">
+            <div class="label">Alle</div>
+            <div class="icon icon-calendar"></div>
+            <div class="number">11</div>
+          </div>
+          <div class="tile">
+            <div class="label">Offen</div>
+            <div class="icon icon-doc"></div>
+            <div class="number">4</div>
+          </div>
+          <div class="tile">
+            <div class="label">In Bearbeitung</div>
+            <div class="icon icon-rocket"></div>
+            <div class="number">3</div>
+          </div>
+          <div class="tile">
+            <div class="label">Erledigt</div>
+            <div class="icon icon-ok"></div>
+            <div class="number">2</div>
+          </div>
+          <div class="tile">
+            <div class="label">Abgebrochen</div>
+            <div class="icon icon-cancel"></div>
+            <div class="number">1</div>
+          </div>
+          <div class="tile">
+            <div class="label">Zurückgestellt</div>
+            <div class="icon icon-bell-off-empty"></div>
+            <div class="number">1</div>
+          </div>
+        </div>
+      </section>
+      <section>
         <h2>Beruf</h2>
-        <div class="tile-list"></div>
-      </div>
+        <div class="tile-container">
+          <div class="tile">
+            <div class="label">Alle</div>
+            <div class="icon icon-calendar"></div>
+            <div class="number">6</div>
+          </div>
+          <div class="tile">
+            <div class="label">Offen</div>
+            <div class="icon icon-doc"></div>
+            <div class="number">2</div>
+          </div>
+          <div class="tile">
+            <div class="label">In Bearbeitung</div>
+            <div class="icon icon-rocket"></div>
+            <div class="number">2</div>
+          </div>
+          <div class="tile">
+            <div class="label">Erledigt</div>
+            <div class="icon icon-ok"></div>
+            <div class="number">0</div>
+          </div>
+          <div class="tile">
+            <div class="label">Abgebrochen</div>
+            <div class="icon icon-cancel"></div>
+            <div class="number">0</div>
+          </div>
+          <div class="tile">
+            <div class="label">Zurückgestellt</div>
+            <div class="icon icon-bell-off-empty"></div>
+            <div class="number">0</div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

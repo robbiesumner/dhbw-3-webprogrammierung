@@ -57,30 +57,78 @@ header li {
     color: crimson;
 }
 
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 header li:hover {
-    cursor: pointer;
     text-decoration: underline;
 }
 
-.tile-list {
-    padding: 0;
+
+/*
+ * MAIN
+ */
+.tile-container {
     display: flex;
+
+    flex-wrap: wrap;
+    gap: 2em;
 }
 
-.tile-list li {
-    list-style: none;
+.tile {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 20px 10px rgba(0,0,0,.4);
 
-    margin: 1em;
-    background: white;
-    padding: 1em;
-    
-    border-style: solid;
-    border-color: lightgrey;
-    border-width: 1px;
-    
-    box-shadow: 1px 1px 1px grey;
+    width: 9em;
+    height: 9em;
 }
 
-.alle {
-    background-color: rgb(236, 236, 236);
+.tile:hover {
+    cursor: pointer;
+    border: 1px solid grey;
+    box-shadow: 10px 20px 10px rgba(0,0,0,.6);
+}
+
+#category-all .tile {
+    background-color: rgba(255, 255, 200);
+}
+
+.tile:first-child {
+    background-color: rgba(200, 200, 200) !important;
+}
+
+
+/*
+ * TILE content
+ */
+.tile {
+    position: relative;
+}
+
+.tile .label {
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.tile .icon {
+    font-size: 2em;
+
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+}
+
+.tile .number {
+    font-size: 2em;
+    font-weight: bold;
+
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
 }
