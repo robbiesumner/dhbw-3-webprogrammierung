@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>🎁 Mein erster Media Query</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+
+        font-family: sans-serif;
+        font-size: 12pt;
+      }
+
+      h1 {
+        color: crimson;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5),
+          0px 1px 1px rgba(0, 0, 0, 0.5), 1px 0px 1px rgba(0, 0, 0, 0.5),
+          1px 1px 1px rgba(0, 0, 0, 0.5);
+      }
+
+      main {
+        text-align: center;
+      }
+
+      @media (min-width: 992px) {
+        html {
+          /* https://pixabay.com/photos/gifts-packages-made-loop-570821/ */
+          background-image: url(hintergrund.jpg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        main {
+          width: 40em;
+          padding: 1em;
+          padding-left: 0;
+          padding-right: 0;
+
+          background-color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Das Gedicht vom Älter werden</h1>
+
+      <p>
+        Das große Glück, noch klein zu sein, <br />
+        Sieht mancher Mensch als Kind nicht ein. <br />
+        Und möchte, dass er ungefähr <br />
+        So 16 oder 17 wär'.
+      </p>
+
+      <p>
+        Doch schon mit 18 denkt er: „Halt! <br />
+        Wer über 20 ist, ist alt.” <br />
+        Warum? Die 20 sind vergnüglich – <br />
+        Auch sind die 30 noch vorzüglich.
+      </p>
+
+      <p>
+        Zwar in den 40, welche Wende, <br />
+        Da gilt die 50 fast als Ende. <br />
+        Doch in den 50, peu à peu, <br />
+        Schraubt man das Ende in die Höh'!
+      </p>
+
+      <p>
+        Die 60 scheinen noch passabel <br />
+        Und erst die 70 miserabel. <br />
+        Mit 70 aber hofft man still: <br />
+        „Ich schaff' die 80, so Gott will.”
+      </p>
+
+      <p>
+        Wer dann die 80 biblisch überlebt, <br />
+        Zielsicher auf die 90 strebt. <br />
+        Dort angelangt, sucht er geschwind <br />
+        Nach Freunden, die noch älter sind.
+      </p>
+
+      <p>
+        Doch hat die Mitte 90 man erreicht <br />
+        – Die Jahre, wo einen nichts mehr wundert –, <br />
+        Denkt man mituntner: „Na, vielleicht <br />
+        Schaffst du mit Gottes Hilfe auch die 100.”
+      </p>
+    </main>
+  </body>
+</html>
