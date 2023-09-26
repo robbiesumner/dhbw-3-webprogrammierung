@@ -35,14 +35,90 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2em;
 }
 
+
+button {
+    font-size: inherit;
+
+    padding: 0.5em;
+
+    border-radius: 0.5em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 /**
  * Dunkler Bereich
  */
+#section1 {
+    background-color: #333333;
+    color: white;
+}
 
-/* --- TODO --- */
+.padding {
+    padding: 1em;
+    margin-left: 8px;
+}
+
+#section1 h1 {
+    border-left: #ff9400 solid 4px;
+
+    background-color: #292929;
+    padding: 0.5em;
+    margin: 0;
+
+    text-transform: uppercase;
+}
+
+.dark-text {
+    color: #666666;
+}
+
+#section1 button {
+    background-color: #ff9400;
+    color: white;
+
+    border: 1px solid #d97e00;
+}
+
+a, a:visited {
+    color: #35aeca;
+    text-decoration: none;;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 /**
  * Heller Bereich
  */
+#links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5em;
+}
 
-/* --- TODO --- */
+#links button {
+
+    color: white;
+    background-color: #009999;
+    border: 1px solid #008888;
+}
+
+#contact {
+    padding: 0.5em;
+    background-color: #d5d5d5;
+
+    border-left: #009999 solid 4px;
+}
+
+#contact h2 {
+    text-transform: uppercase;
+}
+
+#legal {
+    text-align: center;
+    font-size: 80%;
+}

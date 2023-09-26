@@ -1,0 +1,29 @@
+body {
+    font-size: 12pt;
+}
+
+.max-width {
+    max-width: 60em;
+
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    gap: 1em;
+
+    padding-top: 1em;
+}
+
+.flex > * {
+    flex: 1;
+}
+
+#links {
+    justify-content: flex-end;
+}
